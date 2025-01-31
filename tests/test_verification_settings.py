@@ -7,7 +7,7 @@ from src.application import setup
 
 @pytest.fixture
 def driver():
-    driver = webdriver.Chrome()  # Or other browser driver (e.g., Firefox, Edge)
+    driver = webdriver.Chrome()
     yield driver
     driver.quit()
 
